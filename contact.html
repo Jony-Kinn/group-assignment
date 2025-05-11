@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IWB - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>IWB</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@iwb.co.ls</p>
+            <p>Student Number: 901016521</p>
+            <p>Phone: +266 59063851</p>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank"><img src="face.jpeg" alt="Facebook"></a>
+                <a href="https://twitter.com" target="_blank"><img src="twit.jpeg" alt="Twitter"></a>
+                <a href="https://linkedin.com" target="_blank"><img src="lin.jpeg" alt="LinkedIn"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 IWB. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Message sent successfully!');
+            this.reset();
+        });
+    </script>
+</html>
